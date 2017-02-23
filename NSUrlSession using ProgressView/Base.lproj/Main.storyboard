@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8DX-ws-FQU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="frf-g3-vYk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Qbb-Vq-tQn"/>
+                                    <constraint firstAttribute="height" constant="603" id="gZD-fG-SUE"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="g31-DP-UYv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="buX-FY-DGs"/>
+                                    <constraint firstAttribute="width" constant="375" id="vs2-db-5Rm"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g31-DP-UYv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Eb-8D-MmF"/>
+                            <constraint firstItem="g31-DP-UYv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Xb-MV-j9d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="frf-g3-vYk" secondAttribute="bottom" id="4Tx-Ei-exs"/>
+                            <constraint firstItem="frf-g3-vYk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="D8D-fG-4mz"/>
+                            <constraint firstAttribute="trailing" secondItem="frf-g3-vYk" secondAttribute="trailing" id="E85-DE-ChL"/>
+                            <constraint firstAttribute="trailing" secondItem="g31-DP-UYv" secondAttribute="trailing" id="YNs-89-3uE"/>
+                            <constraint firstItem="g31-DP-UYv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cS8-Y9-Xbs"/>
+                            <constraint firstItem="frf-g3-vYk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wW2-h6-p90"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UAj-hC-JNf"/>
+                    <connections>
+                        <outlet property="imageView" destination="frf-g3-vYk" id="LZk-JO-uzr"/>
+                        <outlet property="progressView" destination="g31-DP-UYv" id="5i2-3i-txO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="-193.85307346326837"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QNE-Cz-T2p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8DX-ws-FQU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tb5-6a-71R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c0F-5g-QSm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aK6-ET-IGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="-193.85307346326837"/>
+        </scene>
+    </scenes>
+</document>
